@@ -3,21 +3,8 @@
   e retorna a de maior comprimento.
 */
 
-const maiorString = (stringUm, stringDois) => {
-  if (stringUm.length > stringDois.length) {
-    return stringUm;
-  } else {
-    return stringDois;
-  }
-};
-
-const maiorString2 = (stringUm, stringDois) => {
-  if (stringUm.length > stringDois.length) {
-    return stringUm;
-  } else {
-    return stringDois;
-  }
-};
+const maiorString = (stringUm, stringDois) =>
+  stringUm.length >= stringDois.length ? stringUm : stringDois;
 
 window.exercise01 = function () {
   console.log("resultado ex1: ", maiorString("olaa", "bom"));

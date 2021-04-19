@@ -3,6 +3,6 @@
   substitua todas as ocorrências de números por `$`.
 */
 
-window.exercise02 = function() {
+window.exercise02 = function () {
   console.log("resultado ex2: ");
 };
