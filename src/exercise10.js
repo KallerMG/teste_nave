@@ -27,6 +27,20 @@ Faça uma função que receba 2 parâmetros: um array de movies e um array de ac
 
  */
 
-window.exercise10 = function() {
+const movies = [
+  { id: 1, name: "Joker" },
+  { id: 2, name: "Parasite" },
+  { id: 3, name: "Avengers" },
+  { id: 4, name: "Her" }
+];
+
+const actors = [
+  { id: 1, name: "Cho Yeo-jeong", movie_ids: [2] },
+  { id: 2, name: "Robert Downey Jr.", movie_ids: [3] },
+  { id: 3, name: "Joaquin Phoenix", movie_ids: [1, 4] },
+  { id: 4, name: "Scarlett Johansson", movie_ids: [3] }
+];
+
+window.exercise10 = function () {
   console.log("resultado ex10: ");
 };
