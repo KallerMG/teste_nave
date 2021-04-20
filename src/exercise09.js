@@ -24,10 +24,9 @@ const descIdade = (array) => {
     return b.age - a.age || a.id - b.id;
   });
 
-  console.log(resultado);
+  return resultado;
 };
 
 window.exercise09 = function () {
-  descIdade(arrayObjetos);
-  console.log("resultado ex9: ");
+  console.log("resultado ex9: ", descIdade(arrayObjetos));
 };

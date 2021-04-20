@@ -42,19 +42,19 @@ const actors = [
 ];
 
 const insertActors = (arrayMovies, arrayActors) => {
-  let roots = arrayMovies.map((obj) => {
+  let newArray = arrayMovies.map((obj) => {
     obj["actors"] = [];
-    arrayActors.map((element) => {
-      if (element.movie_ids.includes(obj["id"])) {
-        obj["actors"].push(element.name);
+    arrayActors.map((actor) => {
+      if (actor.movie_ids.includes(obj["id"])) {
+        obj["actors"].push(actor.name);
       }
+      return null;
     });
     return obj;
   });
-  console.log(roots);
+  return newArray;
 };
 
 window.exercise10 = function () {
-  console.log("resultado ex10: ");
-  insertActors(movies, actors);
+  console.log("resultado ex10: ", insertActors(movies, actors));
 };

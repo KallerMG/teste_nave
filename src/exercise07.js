@@ -28,13 +28,6 @@ const encontrar = (array) => {
   }
 };
 
-/* const encontrarv = (array) => {
-  let achei = array.find((element) => element.age < 25);
-  achei != null
-    ? console.log(achei.first_name + " " + achei.last_name)
-    : console.log("Nenhum resultado foi encontrado.");
-}; */
-
 window.exercise07 = function () {
   encontrar(arrayObjetos);
   console.log("resultado ex7: ");

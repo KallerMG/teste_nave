@@ -38,5 +38,6 @@ const apiViacep = async (string) => {
 };
 
 window.exercise04 = function () {
+  /* utilizei esse cep pois o da minha cidade falata dados ( 96300-000) */
   console.log("resultado ex4: ", apiViacep("01001000"));
 };

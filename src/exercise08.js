@@ -20,9 +20,12 @@ const arrayObjetos = [
 
 const menorTrinta = (array) => {
   let filtrado = array.filter((valor) => valor.age < 30);
-  console.log(filtrado);
+  if (filtrado != null) {
+    return filtrado;
+  } else {
+    console.log("Nenhum resultado foi encontrado.");
+  }
 };
 window.exercise08 = function () {
-  menorTrinta(arrayObjetos);
-  console.log("resultado ex8: ");
+  console.log("resultado ex8: ", menorTrinta(arrayObjetos));
 };
