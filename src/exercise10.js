@@ -41,6 +41,21 @@ const actors = [
   { id: 4, name: "Scarlett Johansson", movie_ids: [3] }
 ];
 
+const teste = (arrayMovies, arrayActors) => {
+  let roots = arrayMovies.map((obj) => {
+    obj["actors"] = [];
+    arrayActors.map((element) => {
+      if (element.movie_ids.includes(obj["id"])) {
+        obj["actors"].push(element.name);
+      }
+    });
+    return obj;
+  });
+  console.log("modificado", roots);
+};
+
 window.exercise10 = function () {
+  /* insertActors(movies, actors); */
+  teste(movies, actors);
   console.log("resultado ex10: ");
 };

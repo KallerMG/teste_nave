@@ -24,7 +24,7 @@ const arrayObjetos = [
 ];
 
 const saudacaoObjetos = (arrayObj) => {
-  arrayObj.map((obj, idex) => {
+  arrayObj.map((obj) => {
     return console.log("Olá, " + obj.first_name + " " + obj.last_name);
   });
 };
